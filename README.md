@@ -1,7 +1,7 @@
 googleoauth2servletfilter
 =========================
 
-A ServletFilter allowing your application to get authorization to use Google Drive SDK using OAuth2. 
+A ServletFilter allowing your application to get authorization to use Google Drive SDK using OAuth2. It also handles redirects when Google Drive asks the application to open / create new files via the Google Drive UI.
 
 To use it: 
 
