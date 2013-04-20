@@ -50,13 +50,13 @@ datanucleus.autoCreateSchema=true
 	
 * Get your client_secrets.json file from the Google API console and store it in WEB-INF/classes.
 
-* The first time your user is authenticated by Google he/she will also have to grant permissions for your application to access Google Drive on the users behalf. 
-
 * To access the Google Drive API from your application, use the static helper method found in the GoogleOAuth2ServletFilter class:
 
 ```
 	static public Drive getGoogleDriveService(HttpSession session) throws InvalidClientSecretsException
 ```
+
+* The first time your user is authenticated by Google he/she will also have to grant permissions for your application to access Google Drive on the users behalf. 
 
 
 
