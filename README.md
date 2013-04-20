@@ -1,11 +1,13 @@
 googleoauth2servletfilter
 =========================
 
-A ServletFilter allowing your application to get authorization to use Google Drive SDK using OAuth2. It also handles redirects when Google Drive asks the application to open / create new files via the Google Drive UI.
+A ServletFilter allowing your application to get authorization to use Google Drive SDK using OAuth2. It also handles redirects when Google Drive asks the application to open / create new files via the Google Drive UI. 
+
+It's based on the Google API examples, but the classes are tweaked slightly to work as a ServletFilter.
 
 To use it: 
 
-* Add the Maven-dependency to your application (making sure you run mvn install for this module before to add it to the Maven repo obviously).
+* Add the Maven-dependency to your application.
 
 * Put a jdo.properties file containing your JDO settings in the WEB-INF/classes directory (this is used to persist the refreshToken so that the user doesn't need to grant permissions every time he/she accesses your application). 
 
