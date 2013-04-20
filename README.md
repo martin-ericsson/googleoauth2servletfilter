@@ -12,10 +12,15 @@ To use it:
 * Put a jdo.properties file containing your JDO settings in the WEB-INF/classes directory (this is used to persist the refreshToken so that the user doesn't need to grant permissions every time he/she accesses your application). 
 
 	javax.jdo.PersistenceManagerFactoryClass=org.datanucleus.api.jdo.JDOPersistenceManagerFactory
+	
 	datanucleus.ConnectionDriverName=com.mysql.jdbc.Driver
+
 	datanucleus.ConnectionURL=YourURL
+
 	datanucleus.ConnectionUserName=YourUsername
+
 	datanucleus.ConnectionPassword=YourPassword
+
 	datanucleus.autoCreateSchema=true
 
 * Configure the servlet filter as per usual in the web.xml. Filter config options include:
